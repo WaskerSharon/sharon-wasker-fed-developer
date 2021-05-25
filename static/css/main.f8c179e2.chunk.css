@@ -1,0 +1,2 @@
+.topbar{position:fixed;top:0;z-index:1;width:100%;height:7rem;background-color:#390446}.intro{background-color:#ffe46e}.portfolio{background-color:#ff56be}.works{background-color:#83d2ff}.testimonials{background-color:#4ff56b}.contact{background-color:#1dc0c0}.app{height:100vh}.sections{position:relative;top:7rem;width:100%;background-color:#a6d19d}.sections,.sections>*{height:calc(100vh - 7rem)}.sections>*{width:100vw}*{font-family:"Ubuntu",sans-serif;margin:0}
+/*# sourceMappingURL=main.f8c179e2.chunk.css.map */

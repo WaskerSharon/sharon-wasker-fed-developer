@@ -1,23 +1,20 @@
 {
   "files": {
-    "main.css": "/sharon-wasker-fed-developer/static/css/main.a442f3c1.chunk.css",
-    "main.js": "/sharon-wasker-fed-developer/static/js/main.f14fc2f5.chunk.js",
-    "main.js.map": "/sharon-wasker-fed-developer/static/js/main.f14fc2f5.chunk.js.map",
-    "runtime-main.js": "/sharon-wasker-fed-developer/static/js/runtime-main.f2c51a46.js",
-    "runtime-main.js.map": "/sharon-wasker-fed-developer/static/js/runtime-main.f2c51a46.js.map",
-    "static/js/2.733338d9.chunk.js": "/sharon-wasker-fed-developer/static/js/2.733338d9.chunk.js",
-    "static/js/2.733338d9.chunk.js.map": "/sharon-wasker-fed-developer/static/js/2.733338d9.chunk.js.map",
-    "static/js/3.f999c418.chunk.js": "/sharon-wasker-fed-developer/static/js/3.f999c418.chunk.js",
-    "static/js/3.f999c418.chunk.js.map": "/sharon-wasker-fed-developer/static/js/3.f999c418.chunk.js.map",
+    "main.css": "/sharon-wasker-fed-developer/static/css/main.f8c179e2.chunk.css",
+    "main.js": "/sharon-wasker-fed-developer/static/js/main.cf3da1c8.chunk.js",
+    "main.js.map": "/sharon-wasker-fed-developer/static/js/main.cf3da1c8.chunk.js.map",
+    "runtime-main.js": "/sharon-wasker-fed-developer/static/js/runtime-main.32052059.js",
+    "runtime-main.js.map": "/sharon-wasker-fed-developer/static/js/runtime-main.32052059.js.map",
+    "static/js/2.87f600de.chunk.js": "/sharon-wasker-fed-developer/static/js/2.87f600de.chunk.js",
+    "static/js/2.87f600de.chunk.js.map": "/sharon-wasker-fed-developer/static/js/2.87f600de.chunk.js.map",
     "index.html": "/sharon-wasker-fed-developer/index.html",
-    "static/css/main.a442f3c1.chunk.css.map": "/sharon-wasker-fed-developer/static/css/main.a442f3c1.chunk.css.map",
-    "static/js/2.733338d9.chunk.js.LICENSE.txt": "/sharon-wasker-fed-developer/static/js/2.733338d9.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/sharon-wasker-fed-developer/static/media/logo.6ce24c58.svg"
+    "static/css/main.f8c179e2.chunk.css.map": "/sharon-wasker-fed-developer/static/css/main.f8c179e2.chunk.css.map",
+    "static/js/2.87f600de.chunk.js.LICENSE.txt": "/sharon-wasker-fed-developer/static/js/2.87f600de.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.f2c51a46.js",
-    "static/js/2.733338d9.chunk.js",
-    "static/css/main.a442f3c1.chunk.css",
-    "static/js/main.f14fc2f5.chunk.js"
+    "static/js/runtime-main.32052059.js",
+    "static/js/2.87f600de.chunk.js",
+    "static/css/main.f8c179e2.chunk.css",
+    "static/js/main.cf3da1c8.chunk.js"
   ]
 }
