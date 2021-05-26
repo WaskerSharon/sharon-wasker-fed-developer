@@ -1,16 +1,17 @@
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *, *:before, *:after {
   overflow-x: hidden;
-  box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
   padding: 0;
   font-weight: normal;
-  
 }
 
 ol, ul {
@@ -37,7 +38,4 @@ h3 {
 p, span {
   font-size: 1.8rem;
 }
-
-
-
-
+/*# sourceMappingURL=style.css.map */

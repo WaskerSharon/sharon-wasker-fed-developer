@@ -1,0 +1,19 @@
+@import "../../global.scss";
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: -30rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    height: 100vh;
+    background-color: $mainColor;
+
+    &.active {
+        right: 0;
+    }
+}

@@ -1,8 +1,106 @@
+
+@import "../../global.scss";
+
 .topbar {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     width: 100%;
     height: 7rem;
-    background-color: rgb(57, 4, 70) ;
+    background-color: #ffffff;
+    color: $mainColor;
+    transition: all 1s ease;
+    
+    scrollbar-width: none; //firefox
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .wrapper {
+        padding: 1rem 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        .left {
+            display: flex;
+            align-items: center;
+            // justify-content: space-between;
+
+            .logo {
+                font-family: 'Patrick Hand', cursive;
+                font-size: 5em;
+                font-weight: 700;
+                letter-spacing: 0.01em;
+                color: inherit;
+                text-decoration: none;
+                margin-right: 4rem;
+            }
+
+            .itemContainer {
+                display: flex;
+                align-items: center;
+                margin-right: 3.8rem;
+                // justify-content: space-between;
+
+                .icon {
+                    font-size: 2.25rem;
+                    margin-right: 1rem;
+                }
+
+                span {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+
+            }
+        }
+
+        .right {
+
+            .hamburger {
+                width: 3.3rem;
+                height: 2.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+
+                scrollbar-width: none; //firefox
+                &::-webkit-scrollbar {
+                    display: none;
+                }
+
+                span {
+                    width: 100%;
+                    height: .3rem;
+                    background-color: $mainColor;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+        }
+    }
+
+    &.active {
+        background-color: $mainColor;
+        color: #ffffff;
+
+        .hamburger {
+            span {
+                &:first-child {
+                 background-color: #ffffff; 
+                 transform: rotate(45deg);
+                } 
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:last-child {
+                 background-color: #ffffff; 
+                 transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+
 }

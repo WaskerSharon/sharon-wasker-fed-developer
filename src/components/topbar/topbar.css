@@ -1,9 +1,121 @@
 .topbar {
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   height: 7rem;
-  background-color: #390446;
+  background-color: #ffffff;
+  color: #126e7e;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  scrollbar-width: none;
+}
+
+.topbar::-webkit-scrollbar {
+  display: none;
+}
+
+.topbar .wrapper {
+  padding: 1rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.topbar .wrapper .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topbar .wrapper .left .logo {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 5em;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  color: inherit;
+  text-decoration: none;
+  margin-right: 4rem;
+}
+
+.topbar .wrapper .left .itemContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 3.8rem;
+}
+
+.topbar .wrapper .left .itemContainer .icon {
+  font-size: 2.25rem;
+  margin-right: 1rem;
+}
+
+.topbar .wrapper .left .itemContainer span {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.topbar .wrapper .right .hamburger {
+  width: 3.3rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  scrollbar-width: none;
+}
+
+.topbar .wrapper .right .hamburger::-webkit-scrollbar {
+  display: none;
+}
+
+.topbar .wrapper .right .hamburger span {
+  width: 100%;
+  height: .3rem;
+  background-color: #126e7e;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+}
+
+.topbar.active {
+  background-color: #126e7e;
+  color: #ffffff;
+}
+
+.topbar.active .hamburger span:first-child {
+  background-color: #ffffff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.topbar.active .hamburger span:nth-child(2) {
+  opacity: 0;
+}
+
+.topbar.active .hamburger span:last-child {
+  background-color: #ffffff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 /*# sourceMappingURL=topbar.css.map */

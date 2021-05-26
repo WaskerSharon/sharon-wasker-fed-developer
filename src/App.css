@@ -8,10 +8,19 @@
   width: 100%;
   height: calc(100vh - 7rem);
   background-color: #a6d19d;
+  scroll-behavior: smooth;
+  -ms-scroll-snap-type: y mandatory;
+      scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+}
+
+.sections::-webkit-scrollbar {
+  display: none;
 }
 
 .sections > * {
   width: 100vw;
   height: calc(100vh - 7rem);
+  scroll-snap-align: start;
 }
 /*# sourceMappingURL=app.css.map */
