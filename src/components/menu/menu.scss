@@ -3,17 +3,40 @@
 .menu {
     position: fixed;
     top: 0;
-    right: -30rem;
+    right: -35rem;
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 30rem;
+    width: 35rem;
     height: 100vh;
     background-color: $mainColor;
+    transition: all 1s ease;
 
     &.active {
         right: 0;
+    }
+
+    ul {
+       font-size: 3.5rem; 
+       color: #ffffff;
+       width: 60%;
+       
+       li {
+           margin-bottom: 5rem;
+
+           a {
+               font-weight: 100;
+               font-size: inherit;
+               color: inherit;
+               text-decoration: none;
+
+               &:hover {
+                   font-weight: 500;
+               }
+           }
+
+       }
     }
 }
