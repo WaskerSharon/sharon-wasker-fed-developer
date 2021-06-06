@@ -1,3 +1,58 @@
+
+@import "../../global.scss";
+
 .works {
     background-color: rgb(131, 210, 255);
+    @include flexCenter();
+
+    .slider {
+        position: absolute;
+        left: 0;
+        height: 35rem;
+        display: flex;
+
+        .container {
+            width: 100vw;
+            @include flexCenter();
+
+            .item {
+                width: 70rem;
+                height: 100%;
+                background-color: #ffffff;
+                border-radius: 2rem;
+                @include flexCenter();
+
+                .left {
+                    flex: 4;
+                    height: 80%;
+                    @include flexCenter();
+
+                    .leftContainer {
+                        width: 90%;
+                        height: 80%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+
+                        .imgContainer {
+                            width: 4rem;
+                            height: 4rem;
+                            border-radius: 50%;
+                            background-color: #ffb9ee;
+                            @include flexCenter();
+                
+                            img {
+                                width: 3rem;
+                            }
+                        }
+                    }
+                }
+                
+                .right {
+                    flex: 8;
+                    height: 100%;
+                }
+            }
+        }
+    }
 }

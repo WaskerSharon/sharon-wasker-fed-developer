@@ -18,14 +18,11 @@
 
     .wrapper {
         padding: 1rem 3rem;
-        display: flex;
-        align-items: center;
+        @include flexCenter();
         justify-content: space-between;
         
         .left {
-            display: flex;
-            align-items: center;
-            // justify-content: space-between;
+            @include flexCenter();
 
             .logo {
                 font-family: 'Patrick Hand', cursive;
@@ -38,10 +35,8 @@
             }
 
             .itemContainer {
-                display: flex;
-                align-items: center;
+                @include flexCenter();
                 margin-right: 3.8rem;
-                // justify-content: space-between;
 
                 .icon {
                     font-size: 2.25rem;

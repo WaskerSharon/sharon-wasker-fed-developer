@@ -2,9 +2,8 @@
 @import "../../global.scss";
 
 .portfolio {
-    display: flex;
+    @include flexCenter();
     flex-direction: column;
-    align-items: center;
 
     h2 {
         font-size: 5rem;
@@ -28,9 +27,7 @@
 
     .container {
         width: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flexCenter();
         flex-wrap: wrap;
 
         .item {
@@ -39,9 +36,7 @@
             margin: 1rem 2rem;
             // border: 1px solid rgb(240, 236, 236);
             border-radius: 2rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexCenter();
             color: #ffffff;
             transition: all .5s ease-in-out;
             cursor: pointer;

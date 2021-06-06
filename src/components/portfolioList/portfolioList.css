@@ -1,0 +1,19 @@
+.portfolioList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+  font-size: 1.7rem;
+  padding: .7rem;
+  border-radius: .6rem;
+  cursor: pointer;
+}
+
+.portfolioList.active {
+  background-color: #126e7e;
+  color: #ffffff;
+}
+/*# sourceMappingURL=portfolioList.css.map */
