@@ -7,7 +7,6 @@
   top: 7rem;
   width: 100%;
   height: calc(100vh - 7rem);
-  background-color: #a6d19d;
   scroll-behavior: smooth;
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;

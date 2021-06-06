@@ -1,4 +1,91 @@
 .portfolio {
-  background-color: #ff56be;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio h2 {
+  font-size: 5rem;
+  min-height: 6rem;
+  margin-bottom: 5rem;
+}
+
+.portfolio h3 {
+  font-size: 3rem;
+}
+
+.portfolio ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30vw;
+  margin-bottom: 3rem;
+  padding: 0;
+  list-style: none;
+}
+
+.portfolio .container {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.portfolio .container .item {
+  position: relative;
+  width: 35rem;
+  margin: 1rem 2rem;
+  border-radius: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #ffffff;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.portfolio .container .item h3 {
+  position: absolute;
+  font-size: 2.5rem;
+}
+
+.portfolio .container .item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+
+.portfolio .container .item:hover {
+  background-color: #126e7e;
+  border-radius: 2rem;
+}
+
+.portfolio .container .item:hover img {
+  opacity: .2;
+  z-index: 0;
 }
 /*# sourceMappingURL=portfolio.css.map */
