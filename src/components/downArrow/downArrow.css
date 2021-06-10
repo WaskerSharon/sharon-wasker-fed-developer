@@ -1,9 +1,9 @@
-a {
+.downArrow {
   position: absolute;
   bottom: 2rem;
 }
 
-a img {
+.downArrow img {
   width: 3.5rem;
   -webkit-animation: arrowBlink 2s infinite;
           animation: arrowBlink 2s infinite;

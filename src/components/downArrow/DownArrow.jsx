@@ -3,7 +3,7 @@ import "./downArrow.scss";
 
 export default function DownArrow() {
     return (
-        <a href="#portfolio">
+        <a  className="downArrow" href="#portfolio">
             <img src={process.env.PUBLIC_URL + "/assets/down.png"} alt="" />
         </a>
     );

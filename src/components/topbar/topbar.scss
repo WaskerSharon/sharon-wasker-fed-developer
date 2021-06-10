@@ -43,9 +43,11 @@
                     margin-right: 1rem;
                 }
 
-                span {
+                a {
                     font-size: 1.5rem;
                     font-weight: 500;
+                    color: $mainColor;
+                    text-decoration: none;
                 }
 
             }
