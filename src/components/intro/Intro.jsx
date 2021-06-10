@@ -2,6 +2,8 @@ import './intro.scss';
 import { init } from 'ityped';
 import { useEffect, useRef } from "react";
 
+import DownArrow from "../downArrow/DownArrow";
+
 
 export default function Intro() {
 
@@ -12,7 +14,7 @@ export default function Intro() {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
-            strings: ["Junior ReactJS Developer", "Senior CSS Developer"]
+            strings: [ "Senior CSS Developer", "Junior ReactJS Developer" ]
         })
     }, []);
 
@@ -31,9 +33,7 @@ export default function Intro() {
                     <h1>Sharon Wasker</h1>
                     <h3>I am a <span ref={textRef}></span></h3>
                 </div>
-                <a href="#portfolio">
-                    <img src={process.env.PUBLIC_URL + "/assets/down.png"} alt="" />
-                </a>
+                <DownArrow />
             </div>
             
         </div>

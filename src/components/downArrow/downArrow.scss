@@ -1,0 +1,15 @@
+a {
+    position: absolute;
+    bottom: 2rem;
+
+    img {
+        width: 3.5rem;
+        animation: arrowBlink 2s infinite;
+    }
+
+    @keyframes arrowBlink {
+        100% {
+            opacity: 0;
+        }
+    }
+}

@@ -15,7 +15,7 @@
             overflow: hidden;
             width: 70rem;
             height: 70rem;
-            background-color: rgb(81, 255, 148);
+            background-color: rgb(160, 253, 202);
             border-radius: 50%;
             @include flexCenter();
             align-items: flex-end;
@@ -43,27 +43,10 @@
             }
         }
 
-        a {
-            position: absolute;
-            bottom: 2rem;
-            left: 40%;
-
-            img {
-                width: 3.5rem;
-                animation: arrowBlink 2s infinite;
-            }
-
-            @keyframes arrowBlink {
-                100% {
-                    opacity: 0;
-                }
-            }
-        }
-
         h3 {
             span {
                 font-size: inherit;
-                color: rgb(207, 2, 173);
+                color: #c658ff;
                 // color: $mainColor;
             }
         }

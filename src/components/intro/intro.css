@@ -16,7 +16,7 @@
   overflow: hidden;
   width: 70rem;
   height: 70rem;
-  background-color: #51ff94;
+  background-color: #a0fdca;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -67,33 +67,9 @@
   padding: 2rem 0;
 }
 
-.intro .right a {
-  position: absolute;
-  bottom: 2rem;
-  left: 40%;
-}
-
-.intro .right a img {
-  width: 3.5rem;
-  -webkit-animation: arrowBlink 2s infinite;
-          animation: arrowBlink 2s infinite;
-}
-
-@-webkit-keyframes arrowBlink {
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes arrowBlink {
-  100% {
-    opacity: 0;
-  }
-}
-
 .intro .right h3 span {
   font-size: inherit;
-  color: #cf02ad;
+  color: #c658ff;
 }
 
 .intro .right .ityped-cursor {

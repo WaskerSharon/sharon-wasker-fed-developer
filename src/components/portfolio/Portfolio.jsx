@@ -8,7 +8,7 @@ import {
     mobilePortfolio,
     designPortfolio,
     contentPortfolio,
-} from "../../data";
+} from "../../data/data";
 
 export default function Portfolio() {
 
@@ -86,7 +86,6 @@ export default function Portfolio() {
                         <h3>{d.title}</h3>
                     </div>
                 ))}
-               
             </div>
         </div>
     );

@@ -2,14 +2,30 @@
 @import "../../global.scss";
 
 .works {
-    background-color: rgb(131, 210, 255);
+    position: relative;
+    background-color: #77d4ff;
     @include flexCenter();
+
+    .arrow {
+        position: absolute;
+        height: 6rem;
+        cursor: pointer;
+
+        &.left {
+            left: 10rem;
+            transform: rotateY(180deg);
+        }
+
+        &.right {
+            right: 10rem;
+        }
+    }
 
     .slider {
         position: absolute;
         left: 0;
-        height: 35rem;
         display: flex;
+        height: 40rem;
 
         .container {
             width: 100vw;
@@ -24,7 +40,7 @@
 
                 .left {
                     flex: 4;
-                    height: 80%;
+                    height: 90%;
                     @include flexCenter();
 
                     .leftContainer {
@@ -42,8 +58,16 @@
                             @include flexCenter();
                 
                             img {
-                                width: 3rem;
+                                width: 5rem;
+                                height: fit-content;
                             }
+                        }
+
+                        span {
+                            font-size: 1.4rem;
+                            font-weight: 700;
+                            text-decoration: underline;
+                            cursor: pointer;
                         }
                     }
                 }
@@ -51,6 +75,13 @@
                 .right {
                     flex: 8;
                     height: 100%;
+                    @include flexCenter();
+                    overflow: hidden;
+
+                    img {
+                        height: 100%;
+                        transform: rotate(-10deg);
+                    }
                 }
             }
         }

@@ -1,5 +1,6 @@
 .works {
-  background-color: #83d2ff;
+  position: relative;
+  background-color: #77d4ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,13 +12,29 @@
           align-items: center;
 }
 
+.works .arrow {
+  position: absolute;
+  height: 6rem;
+  cursor: pointer;
+}
+
+.works .arrow.left {
+  left: 10rem;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.works .arrow.right {
+  right: 10rem;
+}
+
 .works .slider {
   position: absolute;
   left: 0;
-  height: 35rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 40rem;
 }
 
 .works .slider .container {
@@ -53,7 +70,7 @@
   -webkit-box-flex: 4;
       -ms-flex: 4;
           flex: 4;
-  height: 80%;
+  height: 90%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,7 +114,17 @@
 }
 
 .works .slider .container .item .left .leftContainer .imgContainer img {
-  width: 3rem;
+  width: 5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.works .slider .container .item .left .leftContainer span {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .works .slider .container .item .right {
@@ -105,5 +132,21 @@
       -ms-flex: 8;
           flex: 8;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.works .slider .container .item .right img {
+  height: 100%;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
 }
 /*# sourceMappingURL=works.css.map */

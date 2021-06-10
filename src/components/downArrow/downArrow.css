@@ -1,0 +1,23 @@
+a {
+  position: absolute;
+  bottom: 2rem;
+}
+
+a img {
+  width: 3.5rem;
+  -webkit-animation: arrowBlink 2s infinite;
+          animation: arrowBlink 2s infinite;
+}
+
+@-webkit-keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes arrowBlink {
+  100% {
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=downArrow.css.map */
