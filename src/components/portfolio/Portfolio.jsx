@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react" ;
 import PortfolioList from '../portfolioList/PortfolioList';
+import DownArrow from '../downArrow/DownArrow';
 import './portfolio.scss';
 import { 
     featuredPortfolio,
@@ -87,6 +88,7 @@ export default function Portfolio() {
                     </div>
                 ))}
             </div>
+            <DownArrow />
         </div>
     );
 }

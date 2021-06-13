@@ -33,8 +33,8 @@ export default function Intro() {
                     <h1>Sharon Wasker</h1>
                     <h3>I am a <span ref={textRef}></span></h3>
                 </div>
-                <DownArrow />
             </div>
+                <DownArrow />
             
         </div>
     )

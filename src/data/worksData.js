@@ -1,7 +1,7 @@
 export const worksData = [
     {
       id: 100,
-      icon: "./assets/mobile.png",
+      icon: "/sharon-wasker-fed-developer/assets/mobile.png",
       title: "Web Design",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry. ",
@@ -10,7 +10,7 @@ export const worksData = [
     },
     {
       id: 101,
-      icon: "./assets/globe.png",
+      icon: "/sharon-wasker-fed-developer/assets/globe.png",
       title: "Mobile Application",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
@@ -19,11 +19,11 @@ export const worksData = [
     },
     {
       id: 102,
-      icon: "./assets/writing.png",
+      icon: "/sharon-wasker-fed-developer/assets/writing.png",
       title: "Branding",
       desc:
         "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
       img:
         "https://i.pinimg.com/originals/a9/f6/94/a9f69465d972a004ad581f245d6ad581.jpg",
-    },
+    }
   ];

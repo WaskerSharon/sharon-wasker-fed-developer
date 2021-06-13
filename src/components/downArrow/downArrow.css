@@ -1,6 +1,7 @@
 .downArrow {
   position: absolute;
   bottom: 2rem;
+  right: 50vw;
 }
 
 .downArrow img {

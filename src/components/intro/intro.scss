@@ -3,7 +3,8 @@
 
 
 .intro {
-    background-color: #ffffff;
+    position: relative;
+    background-color: #97b7bd;
     display: flex;
 
     .left {
@@ -13,13 +14,14 @@
         
         .imgContainer {
             overflow: hidden;
-            width: 70rem;
-            height: 70rem;
-            background-color: rgb(160, 253, 202);
+            width: 40vw;
+            height: 40vw;
+            background-color: rgb(255, 255, 255);
             border-radius: 50%;
             @include flexCenter();
             align-items: flex-end;
             float: right;
+            margin-top: 3rem;
             
             img {
                 width: 100%;
@@ -29,7 +31,7 @@
 
     .right {
         flex: 0.5;
-        position: relative;
+        color: #ffffff;
 
         .wrapper {
             width: 100%;

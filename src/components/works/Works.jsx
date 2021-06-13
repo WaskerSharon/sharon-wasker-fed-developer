@@ -1,7 +1,7 @@
 
 import { useEffect, useState } from "react";
-import './works.scss'
 import { worksData } from "../../data/worksData";
+import './works.scss';
 
 
 export default function Works() {

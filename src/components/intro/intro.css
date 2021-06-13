@@ -1,5 +1,6 @@
 .intro {
-  background-color: #ffffff;
+  position: relative;
+  background-color: #97b7bd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,9 +15,9 @@
 
 .intro .left .imgContainer {
   overflow: hidden;
-  width: 70rem;
-  height: 70rem;
-  background-color: #a0fdca;
+  width: 40vw;
+  height: 40vw;
+  background-color: white;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,6 +32,7 @@
       -ms-flex-align: end;
           align-items: flex-end;
   float: right;
+  margin-top: 3rem;
 }
 
 .intro .left .imgContainer img {
@@ -41,7 +43,7 @@
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
           flex: 0.5;
-  position: relative;
+  color: #ffffff;
 }
 
 .intro .right .wrapper {

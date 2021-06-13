@@ -2,8 +2,10 @@
 @import "../../global.scss";
 
 .portfolio {
+    position: relative;
     @include flexCenter();
     flex-direction: column;
+    
 
     h2 {
         font-size: 5rem;
