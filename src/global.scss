@@ -6,3 +6,15 @@ $mainColor: #7789ff;
     justify-content: center;
     align-items: center;
 }
+
+@mixin colorHover() {
+    &:hover {
+        color: #c658ff;
+    }
+}
+
+@mixin bgHover() {
+    &:hover {
+        background-color: #c658ff;
+    }
+}
