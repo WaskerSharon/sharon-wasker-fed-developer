@@ -8,9 +8,13 @@
     
 
     h2 {
-        font-size: 5rem;
-        min-height: 6rem;
+        // font-size: 5rem;
+        min-height: 3rem;
         margin-bottom: 5rem;
+
+        @include mobile {
+            margin-bottom: 3rem;
+        }
     }
 
     h3 {
@@ -23,6 +27,12 @@
         margin-bottom: 3rem;
         padding: 0;
         list-style: none;
+
+        @include mobile {
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 1rem 0;
+        }
     
     }
 
@@ -30,6 +40,10 @@
         width: 90%;
         @include flexCenter();
         flex-wrap: wrap;
+
+        @include mobile {
+            width: 100%;
+        }
 
         .item {
             position: relative;
@@ -41,6 +55,10 @@
             color: #ffffff;
             transition: all .5s ease-in-out;
             cursor: pointer;
+
+            @include mobile {
+                width: 13rem;
+            }
 
             h3 {
                 position: absolute;

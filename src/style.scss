@@ -1,3 +1,5 @@
+@import "global.scss";
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -25,14 +27,26 @@ img {
 h1 {
   font-size: 7rem;
   font-weight: 500;
+
+  @include mobile {
+    font-size: 4rem;
+  }
 }
 
 h2 {
   font-size: 4.5rem;
+
+  @include mobile {
+    font-size: 3.2rem;
+  }
 }
 
 h3 {
   font-size: 3.5rem;
+
+  @include mobile {
+    font-size: 3rem;
+  }
 }
 
 h4 {
@@ -41,6 +55,7 @@ h4 {
 
 p, span {
   font-size: 1.8rem;
+
 }
 
 

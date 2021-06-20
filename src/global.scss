@@ -18,3 +18,11 @@ $mainColor: #7789ff;
         background-color: #c658ff;
     }
 }
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+}

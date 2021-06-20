@@ -11,6 +11,10 @@
         height: 6rem;
         cursor: pointer;
 
+        @include mobile {
+            display: none;
+        }
+
         &.left {
             left: 10rem;
             transform: rotateY(180deg);
@@ -28,6 +32,13 @@
         height: 40rem;
         transition: all 1s ease-out;
 
+        @include mobile {
+            width: 80vh;
+            height: 90vh;
+            flex-direction: column;
+            justify-content: center;
+        }
+
         .container {
             width: 100vw;
             @include flexCenter();
@@ -38,6 +49,11 @@
                 background-color: #ffffff;
                 border-radius: 2rem;
                 @include flexCenter();
+
+                @include mobile {
+                    width: 90vw;
+                    height: 90%;
+                }
 
                 .left {
                     flex: 4;

@@ -9,8 +9,15 @@
     border-radius: .6rem;
     cursor: pointer;
     
+    @include mobile {
+        width: 50%;
+        font-size: 1.5rem;
+        padding: .5rem;
+    }
+
     &.active {
         background-color: $mainColor;
         color: #ffffff;
     }
+
 }
