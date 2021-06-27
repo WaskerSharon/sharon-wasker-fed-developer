@@ -4,8 +4,10 @@
 
 .intro {
     position: relative;
-    background-color: #97b7bd;
     display: flex;
+    background-color: #97b7bd;
+    background-color: #453298;
+    background-color: #707d96;
 
     @include mobile {
         flex-direction: column;
@@ -66,21 +68,26 @@
             h1 {
                 padding: 2rem 0;
             }
-        }
-
-        h3 {
-
-            @include mobile {
-                font-size: 2rem;
-              }   
-
-            span {
-                font-size: inherit;
-                color: #172684;
-                // color: $mainColor;
+            
+            h2 {
+                color: #ffffff;
+            }
+            
+            h3 {
+                
+                @include mobile {
+                    font-size: 2rem;
+                }   
+                
+                span {
+                    font-size: inherit;
+                    color: $tertiaryColor;
+                    color: rgb(228, 159, 222);
+                    color: #daff47;
+                }
             }
         }
-
+            
         .ityped-cursor {
             animation: blink 1s infinite;
         }

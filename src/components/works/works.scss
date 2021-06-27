@@ -33,10 +33,10 @@
         transition: all 1s ease-out;
 
         @include mobile {
-            width: 80vh;
-            height: 90vh;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-evenly;
+            width: 80vh;
+            height: 80vh;
         }
 
         .container {
@@ -51,14 +51,19 @@
                 @include flexCenter();
 
                 @include mobile {
-                    width: 90vw;
-                    height: 90%;
+                    width: 80vw;
+                    height: 13rem;
                 }
 
                 .left {
                     flex: 4;
                     height: 90%;
                     @include flexCenter();
+
+                    @include mobile {
+                        flex: 14;
+                        overflow: hidden;
+                    }
 
                     .leftContainer {
                         width: 90%;
@@ -67,16 +72,39 @@
                         flex-direction: column;
                         justify-content: space-between;
 
+                        @include mobile {
+
+                        }
+
                         .imgContainer {
                             width: 4rem;
                             height: 4rem;
                             border-radius: 50%;
-                            background-color: #ed01c6;
+                            background-color: #aacfff;
                             @include flexCenter();
+
+                            @include mobile {
+                                width: 20px;
+                                height: 20px;
+                            }
                 
                             img {
                                 width: 60%;
                                 height: fit-content;
+                            }
+                        }
+
+                        h2 {
+                            @include mobile {
+                                font-size: 1.5rem;   
+                                overflow: hidden;
+                            }
+                        }
+
+                        p {
+                            @include mobile {
+                                font-size: 1rem;   
+                                overflow: hidden;
                             }
                         }
 
@@ -85,6 +113,11 @@
                             font-weight: 700;
                             text-decoration: underline;
                             cursor: pointer;
+
+                            @include mobile {
+                                font-size: 1rem;   
+                                overflow: hidden;
+                            }
                         }
                     }
                 }
@@ -98,6 +131,10 @@
                     img {
                         height: 100%;
                         transform: rotate(-10deg);
+
+                        @include mobile {
+                            object-fit: cover;
+                        }
                     }
                 }
             }

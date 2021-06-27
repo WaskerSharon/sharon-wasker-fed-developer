@@ -31,6 +31,12 @@
           justify-content: space-between;
 }
 
+@media (max-width: 768px) {
+  .topbar .wrapper {
+    padding: .5rem 1rem;
+  }
+}
+
 .topbar .wrapper .left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,7 +59,13 @@
   margin-right: 4rem;
 }
 
-.topbar .wrapper .left .itemContainer {
+@media (max-width: 768px) {
+  .topbar .wrapper .left .logo {
+    margin-right: 2rem;
+  }
+}
+
+.topbar .wrapper .left .item-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -66,20 +78,48 @@
   margin-right: 3.8rem;
 }
 
-.topbar .wrapper .left .itemContainer .icon {
-  font-size: 2.25rem;
-  margin-right: 1rem;
+@media (max-width: 768px) {
+  .topbar .wrapper .left .item-container {
+    margin-right: 0;
+  }
 }
 
-.topbar .wrapper .left .itemContainer .icon:hover {
+.topbar .wrapper .left .item-container .icon {
+  font-size: 2.25rem;
+  margin-right: 0;
+}
+
+.topbar .wrapper .left .item-container .icon:hover {
   color: #c658ff;
 }
 
-.topbar .wrapper .left .itemContainer a {
+@media (max-width: 768px) {
+  .topbar .wrapper .left .item-container .icon {
+    margin-right: .5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.topbar .wrapper .left .item-container a {
   font-size: 1.5rem;
   font-weight: 500;
   color: #7789ff;
   text-decoration: none;
+}
+
+.topbar .wrapper .left .item-container a:hover {
+  color: #c658ff;
+}
+
+.topbar .wrapper .left .item-container a.active {
+  background-color: #7789ff;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .topbar .wrapper .left .item-container a {
+    font-size: 1.2rem;
+  }
 }
 
 .topbar .wrapper .right .hamburger {

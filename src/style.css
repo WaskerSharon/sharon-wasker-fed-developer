@@ -1,4 +1,4 @@
-@im html {
+html {
   font-size: 62.5%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -28,12 +28,31 @@ h1 {
   font-weight: 500;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
 h2 {
   font-size: 4.5rem;
+  color: #cc51ff;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 3.2rem;
+  }
 }
 
 h3 {
   font-size: 3.5rem;
+}
+
+@media (max-width: 768px) {
+  h3 {
+    font-size: 3rem;
+  }
 }
 
 h4 {

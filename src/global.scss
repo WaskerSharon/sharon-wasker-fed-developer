@@ -1,5 +1,7 @@
 
 $mainColor: #7789ff;
+$secondaryColor: #c658ff;
+$tertiaryColor: #da75ce;
 
 @mixin flexCenter() {
     display: flex;
@@ -9,13 +11,13 @@ $mainColor: #7789ff;
 
 @mixin colorHover() {
     &:hover {
-        color: #c658ff;
+        color: $secondaryColor;
     }
 }
 
 @mixin bgHover() {
     &:hover {
-        background-color: #c658ff;
+        background-color: $secondaryColor;
     }
 }
 

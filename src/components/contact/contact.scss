@@ -2,7 +2,6 @@
 
 .contact {
     display: flex;
-    // background-color: rgb(29, 192, 192);
     background-color: #e6e6e6;
 
     @include mobile {
@@ -25,37 +24,48 @@
         align-self: center;
         height: 80%;
 
-        h2 {
-            // font-size: 2rem;
-        }
-
         form {
             @include flexCenter();
             flex-direction: column;
             justify-content: space-around;
-            width: 70%;
+            width: 100%;
             height: 70%;
 
-            input {
-                width: 30rem;
-                height: 4rem;
+            input, textarea {
+                background-color: #f8f8f8;
+                border: none;
+                border-bottom: 2px solid $mainColor;
+                border-radius: 2rem;
+                color: #000000;
+                width: 50%;
+                padding: 1rem;
                 font-size: 1.5rem;
-                border: 1px solid ;
+                transition: width .7s ease-in-out;
+
+                &:focus {
+                    width: 60%;
+                    outline: none;
+                    border-bottom: 4px solid $secondaryColor;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                }
 
                 @include mobile {
                     width: 100%;
+                }
+            }
+
+            input {
+                height: 4rem;
+
+                @include mobile {
                     height: 2rem;
                 }
             }
 
             textarea {
-                width: 100%;
                 height: 25rem;
-                font-size: 1.5rem;
-                padding: 1rem;
 
                 @include mobile {
-                    width: 100%;
                     height: 10rem;
                 }
             }
@@ -68,7 +78,7 @@
                 color: #ffffff;
                 background-color: $mainColor;
                 border: none;
-                border-radius: 1rem;
+                border-radius: 2rem;
                 cursor: pointer;
                 transition: all .7s ease;
 
@@ -82,6 +92,7 @@
 
             span {
                 color: rgb(12, 173, 85);
+                text-align: center;
             }
 
         }

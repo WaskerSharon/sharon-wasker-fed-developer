@@ -20,6 +20,10 @@
         padding: 1rem 3rem;
         @include flexCenter();
         justify-content: space-between;
+
+        @include mobile {
+            padding: .5rem 1rem;
+        }
         
         .left {
             @include flexCenter();
@@ -63,6 +67,13 @@
                     font-weight: 500;
                     color: $mainColor;
                     text-decoration: none;
+
+                    @include colorHover();
+
+                    &.active {
+                        background-color: $mainColor;
+                        color: #ffffff;
+                    }
 
                     @include mobile {
                         font-size: 1.2rem;

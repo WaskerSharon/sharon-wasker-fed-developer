@@ -8,8 +8,16 @@
   width: 100%;
   font-size: 1.7rem;
   padding: .7rem;
-  border-radius: .6rem;
+  border-radius: 2rem;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .portfolioList {
+    width: 50%;
+    font-size: 1.5rem;
+    padding: .5rem;
+  }
 }
 
 .portfolioList.active {

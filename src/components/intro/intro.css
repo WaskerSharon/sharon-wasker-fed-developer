@@ -1,9 +1,11 @@
 .intro {
   position: relative;
-  background-color: #97b7bd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #97b7bd;
+  background-color: #453298;
+  background-color: #707d96;
 }
 
 @media (max-width: 768px) {
@@ -55,6 +57,13 @@
   margin-top: 3rem;
 }
 
+@media (max-width: 768px) {
+  .intro .left .imgContainer {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
 .intro .left .imgContainer img {
   width: 100%;
 }
@@ -64,6 +73,14 @@
       -ms-flex: 0.5;
           flex: 0.5;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .intro .right {
+    -webkit-box-flex: .4;
+        -ms-flex: .4 1;
+            flex: .4 1;
+  }
 }
 
 .intro .right .wrapper {
@@ -96,9 +113,21 @@
   padding: 2rem 0;
 }
 
-.intro .right h3 span {
+.intro .right .wrapper h2 {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .intro .right .wrapper h3 {
+    font-size: 2rem;
+  }
+}
+
+.intro .right .wrapper h3 span {
   font-size: inherit;
-  color: #c658ff;
+  color: #da75ce;
+  color: #e49fde;
+  color: #daff47;
 }
 
 .intro .right .ityped-cursor {
